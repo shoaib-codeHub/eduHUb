@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation styles */
+nav {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    display: none;
+}
+
+@media(max-width: 790px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 50vh;
+        background-color: black;
+        box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
+        transition: 0.5s ease-out;
+    }
+
+    
+
+    nav a {
+        color: #828282;
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 10px 20px;
+        justify-content: flex-start;
+    }
+
+    nav a:hover {
+        color: rgba(255, 255, 255, 0.66);
+    }
+
+    .open-sidebar-button,
+    .close-sidebar-button {
+        display: block;
+    }
+
+    .close-sidebar-button {
+        margin: -200px 0px 0px 15px;
+    }
+
+    .open-sidebar-button {
+        margin-right: 10px;
+    }
+
+    #sidebar-active:checked~.links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked~#overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+
+    /* Default SVG style */
+    nav svg {
+        width: 32px;
+        height: 32px;
+        transition: all 0.3s ease;
+        /* Smooth transition for color and stroke-width */
+    }
+
+    /* Set initial stroke color and width for SVG paths */
+    nav svg path {
+        stroke: black;
+        /* Initial color */
+        stroke-width: 2;
+        /* Initial line height */
+        transition: stroke 0.3s ease, stroke-width 0.3s ease;
+        /* Smooth transition */
+    }
+
+    /* Hover effect */
+    nav svg:hover path {
+        stroke-width: 3;
+    }
+
+    .close-sidebar-button svg path{
+        stroke: rgba(255, 255, 255, 0.811);
+        /* Change color on hover */
+        stroke-width: 1;
+
+    }
+
+    .close-sidebar-button svg:hover path {
+        stroke-width: 3;
+    }
+   
+
+    /* Sidebar styles for mobile */
+}
