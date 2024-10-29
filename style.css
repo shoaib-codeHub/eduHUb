@@ -4,6 +4,36 @@
 }
 
 /* Navigation styles */
+
+/* logo */
+
+.logo {
+    position: relative;
+    margin-left: -100px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+
+.logo span {
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    ;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 nav {
     height: 60px;
     background-color: white;
@@ -34,6 +64,11 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: rgba(0, 0, 0, 0.71);
+    transition: color 0.5s ease;
+}
+
 
 
 
@@ -56,7 +91,8 @@ nav a {
 }
 
 .dropdown-menu {
-    display: none; /* Hide the dropdown menu by default */
+    display: none;
+    /* Hide the dropdown menu by default */
     position: absolute;
     top: 100%;
     left: 0;
@@ -78,9 +114,10 @@ nav a {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.dropdown span{
+.dropdown span {
     display: none;
 }
+
 /* Dropdown item hover */
 .dropdown-menu li a:hover {
     color: rgba(255, 255, 255, 0.811);
@@ -92,7 +129,8 @@ nav a {
     margin-top: 1px;
     display: block;
 }
-@media(max-width: 790px) {
+
+@media(max-width: 1080px) {
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -108,18 +146,26 @@ nav a {
 
     
 
-    .dropdown span{
+    @media(max-width: 1080px) {
+        .logo {
+            display: none;
+        }
+    }
+
+    .dropdown span {
         font-size: 18px;
         display: block;
         position: relative;
         right: -15px;
     }
-    .dropdown:hover span{
-        transition: all ease 0.8s;
-       rotate: -180deg;
+
+    .dropdown:hover span {
+        transition: all ease-in-out 1s;
+        rotate: -180deg;
     }
 
-    
+
+
     .dropdown:hover .dropdown-menu {
         text-align: center;
         background: rgba(0, 0, 0, 0.425);
@@ -128,20 +174,20 @@ nav a {
         margin-left: 50px;
     }
 
-    .dropdown:hover + #contact-link {
+    .dropdown:hover+#contact-link {
         transition: 0.5s all ease;
-       margin-top: 180px;
+        margin-top: 180px;
     }
 
 
-    
+
 
     nav a {
         color: #828282;
         box-sizing: border-box;
         height: auto;
         width: 100%;
-        padding: 10px 20px;
+        padding: 20px 20px 0px 20px;
         justify-content: flex-start;
     }
 
@@ -155,7 +201,7 @@ nav a {
     }
 
     .close-sidebar-button {
-        margin: -140px 0px 0px 15px;
+        margin: -180px 0px 0px 15px;
     }
 
     .open-sidebar-button {
@@ -199,7 +245,7 @@ nav a {
         stroke-width: 3;
     }
 
-    .close-sidebar-button svg path{
+    .close-sidebar-button svg path {
         stroke: rgba(255, 255, 255, 0.811);
         /* Change color on hover */
         stroke-width: 1;
@@ -209,7 +255,5 @@ nav a {
     .close-sidebar-button svg:hover path {
         stroke-width: 3;
     }
-   
 
-    /* Sidebar styles for mobile */
 }
