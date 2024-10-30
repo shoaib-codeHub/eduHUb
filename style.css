@@ -1,3 +1,10 @@
+
+.ibm-plex-serif-extralight {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -49,6 +56,7 @@ nav {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.473);
 }
 
 nav a {
@@ -91,23 +99,28 @@ nav a:hover {
 }
 
 .dropdown-menu {
+    margin: 0px;
     display: none;
     /* Hide the dropdown menu by default */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: black;
-    padding: 10px 0;
+    padding: 0px;
     list-style-type: none;
-    min-width: 150px;
+    min-width: 130px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 1;
 }
-
+.dropdown-menu li{
+    margin: 0px;
+    padding: 0px;
+}
 .dropdown-menu li a {
+    text-align: center;
     display: block;
-    padding: 8px 20px;
+    padding: 5px 20px;
     color: #828282;
     text-decoration: none;
     white-space: nowrap;
@@ -128,9 +141,13 @@ nav a:hover {
 .dropdown:hover .dropdown-menu {
     margin-top: 1px;
     display: block;
+    transition: all ease-in 1s;
 }
 
 @media(max-width: 1080px) {
+    nav{
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.447);
+    }
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -153,6 +170,8 @@ nav a:hover {
     }
 
     .dropdown span {
+        margin: 0px;
+        padding: 0px;
         font-size: 18px;
         display: block;
         position: relative;
@@ -170,13 +189,13 @@ nav a:hover {
         text-align: center;
         background: rgba(0, 0, 0, 0.425);
         display: block;
-        margin-top: -30px;
-        margin-left: 50px;
+        margin-top: 0px;
+        margin-left: 30px;
     }
 
     .dropdown:hover+#contact-link {
         transition: 0.5s all ease;
-        margin-top: 180px;
+        margin-top: 130px;
     }
 
 
@@ -257,3 +276,5 @@ nav a:hover {
     }
 
 }
+
+/* home-slider */
