@@ -40,3 +40,50 @@ const observer = new IntersectionObserver((entries) => {
 contentElements.forEach(element => {
     observer.observe(element);
 });
+
+
+
+/* user */
+
+const counters = document.querySelectorAll('.users-count');
+
+    // Function to animate a counter
+    function animateCounter(counter) {
+        const target = +counter.getAttribute('data-target');
+        const duration = 3000; // Animation duration in milliseconds
+        const increment = target / (duration / 20);
+
+        let count = 0;
+        counter.innerText = count;
+
+        function updateCounter() {
+            count += increment;
+            if (count < target) {
+                counter.innerText = Math.floor(count);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.innerText = target; // Set the final target value once animation completes
+            }
+        }
+
+        updateCounter();
+    }
+
+    // IntersectionObserver callback to trigger animation when counters come into view
+    const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                counters.forEach(counter => {
+                    counter.innerText = '0'; // Reset to 0 before animating
+                    animateCounter(counter);
+                });
+            }
+        });
+    }, { threshold: 0.5 }); // Adjust threshold as needed (0.5 = 50% of element in view)
+
+    // Observe the .users section
+    const usersSection = document.querySelector('.users');
+    if (usersSection) {
+        sectionObserver.observe(usersSection);
+    }
+
