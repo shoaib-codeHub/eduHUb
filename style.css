@@ -675,6 +675,7 @@ button:hover {
         top: 600px;
     }
 }
+
 @media (max-width: 710px) {
     #course-heading {
         position: relative;
@@ -686,14 +687,8 @@ button:hover {
         top: 2200px;
     }
 
-    .course-image{
+    .course-image {
         display: none;
-    }
-
-
-    #course-description {
-        width: 100%;
-     text-align: center;
     }
 }
 
@@ -716,6 +711,10 @@ button:hover {
     gap: 20px;
 }
 
+.main-course-content:hover{
+    transition: all ease-in-out 0.5s;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Dark shadow inside the image */
+}
 .course-image {
     height: 400px;
     width: 300px;
@@ -731,9 +730,29 @@ button:hover {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+@media (max-width: 710px) {
+
+    .main-course-content {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+    
+   #course-description-heading,#course-description-content,#course-description-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    
+}
+
+
 #course-description h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 #course-description p {
