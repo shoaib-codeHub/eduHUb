@@ -744,6 +744,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
    }
     
 }
@@ -766,6 +767,32 @@ button:hover {
     border: 1px solid black;
 }
 
+
+
+@media (max-width: 1300px) {
+
+    .main-slide-container{
+        position: relative;
+        top: 400px;
+    }
+    
+}
+@media (max-width: 980px) {
+
+    .main-slide-container{
+        position: relative;
+        top: 700px;
+    }
+    
+}
+@media (max-width: 710px) {
+
+    .main-slide-container{
+        position: relative;
+        top: 2200px;
+    }
+    
+}
 .main-slider{
     position: relative;
     height: 500px;
@@ -861,6 +888,6 @@ button:hover {
     position: relative;
     bottom: 400px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
+    font-size: large;
 }
   
