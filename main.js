@@ -86,4 +86,3 @@ const counters = document.querySelectorAll('.users-count');
     if (usersSection) {
         sectionObserver.observe(usersSection);
     }
-
