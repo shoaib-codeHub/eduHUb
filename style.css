@@ -718,7 +718,7 @@ button:hover {
 }
 
 .course-image {
-    height: 400px;
+    height: 500px;
     width: 300px;
 }
 
@@ -764,4 +764,199 @@ button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#course-description-button{
+    margin-top: 20px;
+}
 /* home slider */
+#carouselExampleSlidesOnly{
+    position: relative;
+    top: 100px;
+}
+@media (max-width: 1300px) {
+
+    #carouselExampleSlidesOnly {
+        position: relative;
+        top: 400px;
+    }
+
+    .blog-header{
+       position: relative;
+       top: 300px;
+    }
+
+}
+@media (max-width: 980px) {
+
+    #carouselExampleSlidesOnly {
+        position: relative;
+        top: 700px;
+    }
+    .blog-header{
+        position: relative;
+        top: 600px;
+     }
+}
+@media (max-width: 710px) {
+
+    #carouselExampleSlidesOnly {
+        position: relative;
+        top: 2300px;
+    }
+
+    .blog-header{
+        position: relative;
+        top: 2200px;
+     }
+}
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-content {
+    font-size: 14px; /* Adjust text size for smaller screens */
+    padding: 10px;   /* Add padding */
+    background: rgba(0, 0, 0, 0.7); /* Add a dark background */
+    border-radius: 10px;
+}
+.carousel-caption {
+    bottom: 120px; /* Move the caption 100px from the bottom */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5,h4,p{
+        font-size: 14px;
+    }
+}
+
+.carousel-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-profile-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.carousel-profile-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.carousel-caption h2,h5,h4,p{
+    color: black;
+}
+
+.blog-header{
+    height: 200px;
+    margin-top: 150px;
+}
+
+#blog-description{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content-container{
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+#blog-content:hover {
+    transition: all ease-in-out 0.5s;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    /* Dark shadow inside the image */
+}
+@media (max-width: 1300px) {
+    .blog-content-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        position: relative;
+        top: 200px;
+    }
+}
+
+@media (max-width: 980px) {
+    .blog-content-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position: relative;
+        top: 600px;
+    }
+    #blog-content{
+        height: 400px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        
+    }
+}
+@media (max-width: 710px) {
+    .blog-content-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position: relative;
+        top: 2200px;
+    }
+}
+#blog-content{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    
+}
+
+#blog-date,#main-blog-content{
+    height: 400px;
+}
+
+#blog-date-container{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #82828235;
+    font-size: 20px;
+    color: rgba(0, 128, 0, 0.76);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#main-blog-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#blog-area p{
+    font-size: 2rem;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+#blog-area-content{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+#b-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: skyblue;
+}
+
+#blog-button #b-button{
+    padding-left: 10px;
+}
