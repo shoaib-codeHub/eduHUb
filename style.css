@@ -1055,9 +1055,10 @@ p {
     transition: all ease-in-out 0.6s;
     color: red;
 }
+
 .gui-blog-section:hover .gui-image-section img {
-   rotate: 10deg;
-   transition: all ease-in-out 0.6s;
+    rotate: 10deg;
+    transition: all ease-in-out 0.6s;
 }
 
 .gui-image-section,
@@ -1097,4 +1098,93 @@ p {
 .gui-content-description p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(65, 61, 61);
+}
+
+/* plans and pricing */
+
+.main-plan-container {
+    height: 900px;
+    background-color: rgba(127, 255, 212, 0.486);
+    margin-top: 100px;
+}
+
+.plan-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.plan-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/*plan-content-container*/
+.main-plan-content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-container {
+    height: 600px;
+    width: 350px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 80px 80px 1fr 100px;
+}
+
+.plan-fees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.plan-type,
+.plan-fees,
+.plan-feature,
+.plan-button {
+    border: 1px solid black;
+}
+
+.plan-type,
+.plan-fees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+.plan-fees p span {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.plan-fees i {
+    position: relative;
+    top: -25px;
+}
+
+.plan-fees p sub {
+    position: relative;
+    top: 15px;
+}
+
+.plan-budget span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+}
+
+.plan-budget sup {
+    position: relative;
+    top: -20px;
+}
+
+.plan-validity sub {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
 }

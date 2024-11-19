@@ -100,3 +100,5 @@ const usersSection = document.querySelector('.users');
 if (usersSection) {
     sectionObserver.observe(usersSection);
 }
+
+
