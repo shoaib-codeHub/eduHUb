@@ -1,19 +1,33 @@
-
 let currentIndex = 0;
+const slidesContainer = document.querySelector('.slides');
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
+// Clone the first slide and append it at the end
+const firstSlideClone = slides[0].cloneNode(true);
+slidesContainer.appendChild(firstSlideClone);
+
 function showSlide(index) {
-    const slidesContainer = document.querySelector('.slides');
-    slidesContainer.style.transform = `translateY(-${index * 100}%)`; // Slide from bottom to top
+    slidesContainer.style.transition = "transform 1s ease-in-out"; // Smooth transition
+    slidesContainer.style.transform = `translateY(-${index * 100}%)`;
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides; // Loop back to the first slide after the last one
+    currentIndex++;
     showSlide(currentIndex);
+
+    // Check if the last slide (clone) is reached
+    if (currentIndex === totalSlides) {
+        setTimeout(() => {
+            slidesContainer.style.transition = "none"; // Disable transition for instant reset
+            slidesContainer.style.transform = `translateY(0)`; // Reset to the first slide
+            currentIndex = 0;
+        }, 1000); // Match the transition duration
+    }
 }
 
-setInterval(nextSlide, 4000); // Change slide every 3 seconds
+setInterval(nextSlide, 3000);
+// Change slide every 3 seconds
 
 /* content-div js */
 // Select all content-one elements
