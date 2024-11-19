@@ -786,6 +786,11 @@ button:hover {
         top: 300px;
     }
 
+    .main-gui-blog {
+        position: relative;
+        top: 550px;
+    }
+
 }
 
 @media (max-width: 980px) {
@@ -799,6 +804,11 @@ button:hover {
         position: relative;
         top: 600px;
     }
+
+    .main-gui-blog {
+        position: relative;
+        top: 1350px;
+    }
 }
 
 @media (max-width: 710px) {
@@ -811,6 +821,11 @@ button:hover {
     .blog-header {
         position: relative;
         top: 2200px;
+    }
+
+    .main-gui-blog {
+        position: relative;
+        top: 2950px;
     }
 }
 
@@ -984,4 +999,102 @@ p {
 
 #blog-button #b-button {
     padding-left: 10px;
+}
+
+/* gui-blog-section */
+
+.main-gui-blog {
+    width: 82%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+@media (max-width: 1350px) {
+    .main-gui-blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 930px) {
+    .main-gui-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gui-blog-section {
+        height: 500px;
+        width: 100%;
+        margin: auto;
+        background: rgba(223, 212, 212, 0.502);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+
+.gui-blog-section {
+    height: 500px;
+    width: 400px;
+    background: rgba(223, 212, 212, 0.502);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gui-blog-section:hover .status-date {
+    transition: all ease-in-out 0.6s;
+    color: red;
+}
+
+.gui-blog-section:hover .status-comment {
+    transition: all ease-in-out 0.6s;
+    color: red;
+}
+.gui-blog-section:hover .gui-image-section img {
+   rotate: 10deg;
+   transition: all ease-in-out 0.6s;
+}
+
+.gui-image-section,
+.gui-content-section {
+    height: 250px;
+}
+
+.gui-image-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gui-content-section {
+    display: grid;
+    grid-template-rows: 50px 50px 1fr;
+}
+
+.gui-content-section h4 {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.blog-status {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+.gui-content-description {
+    width: 90%;
+    margin: auto;
+}
+
+.gui-content-description p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(65, 61, 61);
 }
