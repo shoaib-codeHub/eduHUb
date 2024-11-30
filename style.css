@@ -1440,21 +1440,22 @@ p {
 
 
 @media (max-width: 980px) {
-    
-.social-gallery-container {
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
+    .social-gallery-container {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
+
 @media (max-width: 710px) {
-    
-.social-gallery-container {
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
+    .social-gallery-container {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -1466,4 +1467,89 @@ p {
 .social-gallery-content img {
     height: 100%;
     width: 100%;
+}
+
+/* footer section */
+
+.footer-main {
+    height: 600px;
+    position: relative;
+}
+
+.footer-main img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.footer-mian-container {
+    position: absolute;
+    top: -30px;
+    display: grid;
+    grid-template-rows: 400px 200px;
+}
+
+.footer-main-content {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-main-content span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-about-section,
+.footer-learning,
+.footer-learning-grow,
+.footer-engage,
+.footer-legal {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 5px;
+    color: white;
+}
+
+
+
+.footer-learning,
+.footer-learning-grow,
+.footer-engage,
+.footer-legal span {
+    line-height: 11px;
+    color: white;
+}
+
+.footer-legal-description p {
+    line-height: 11px;
+}
+
+.about-description{
+    color: white;
+}
+.footer-engage-description a {
+    color: rgba(255, 255, 255, 0.626);
+}
+.learning-grow-description a {
+    color: rgba(255, 255, 255, 0.626);
+}
+.about-description a {
+    color: rgba(255, 255, 255, 0.626);
+}
+.footer-legal-description a {
+    color: rgba(255, 255, 255, 0.626);
+}
+
+.footer-copyright-policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-copyright-policy a{
+    color: rgba(245, 245, 245, 0.466);
 }
