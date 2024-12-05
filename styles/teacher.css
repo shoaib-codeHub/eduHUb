@@ -520,6 +520,7 @@ button:hover {
 
 
 .footer-main {
+    margin-top: 100px;
     height: 600px;
     position: relative;
 }
