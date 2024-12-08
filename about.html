@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>eduHub</title>
+    <link rel="stylesheet" href="styles/teacher.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    
+    <nav>
+        <input type="checkbox" name="" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18L20 18" stroke="#828282" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 12L20 12" stroke="#828282" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 6L20 6" stroke="#828282" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z"
+                        fill="#828282" />
+                </svg>
+            </label>
+
+            <div class="logo">
+                <img src="icons/graduation_logo.png" alt=""> <span>EDUC.</span>
+            </div>
+            <a class="home-link" href="index.html">Home</a>
+            <a href="courses.html">courses</a>
+            <a href="teacher.html">Teacher</a>
+            <a href="#">About</a>
+            <a href="#">Pricing</a>
+            <div class="dropdown">
+                <a href="#">Blog <span>&#x2193;</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">eCommerce</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Api</a></li>
+                    </ul>
+                </a>
+            </div>
+            <a id="contact-link" href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Create a Course</a>
+        </div>
+    </nav>
+
+
+    <div class="course">
+        <img src="Main_background_images/dark-ice-mountain1.jpg" alt="">
+        <div class="course-content" id="course-content">
+            <div class="course-content-heading">
+                <h2>About Us</h2>
+            </div>
+            <div class="course-content-description">
+                <p>Free Website Template Designed by <a href="#">Shoaib Khan</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="web-intro-container">
+        <div class="web-intro-content">
+            <div class="web-intro">
+                <p id="one">About Our University</p>
+                <h2>Welcome to eduHub Website</h2>
+                <p id="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolorem quas iure quae repellat, molestias vero nisi esse nihil, velit aspernatur, numquam quam officia libero suscipit minima accusantium fugit sapiente!
+                </p>
+                <p id="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolorem quas iure quae repellat, molestias vero nisi esse nihil, velit aspernatur, numquam quam officia libero suscipit minima accusantium fugit sapiente!
+                </p>
+                <p id="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolorem quas iure quae repellat, molestias vero nisi esse nihil, velit aspernatur, numquam quam officia libero suscipit minima accusantium fugit sapiente!
+                </p>
+            </div>
+            <div class="web-profile">
+                <img src="Main_background_images/main-map.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="users">
+        <img src="Main_background_images/dark-ice-mountain1.jpg" alt="">
+
+        <div class="main-user-container">
+
+            <div class="users-container">
+                <div class="users-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="users-count" data-target="3297">0</div>
+                <div class="users-type">
+                    Foreign Followers
+                </div>
+
+            </div>
+            <div class="users-container">
+                <div class="users-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="users-count" data-target="3700">0</div>
+                <div class="users-type">
+                    Students Enrolled
+                </div>
+
+            </div>
+            <div class="users-container">
+                <div class="users-icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <div class="users-count" data-target="5034">0</div>
+                <div class="users-type">
+                    Classes Complete
+                </div>
+
+            </div>
+            <div class="users-container">
+                <div class="users-icon">
+                    <i class="fa-solid fa-person"></i>
+                </div>
+                <div class="users-count" data-target="1080">0</div>
+                <div class="users-type">
+                    Certified Teachers
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="course-categories-container">
+        <div class="course-categories">
+            <div class="course-heading">
+                <h3>Course categories</h3>
+            </div>
+            <div class="course-description">
+                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit
+                    ab aliquam dolor eius.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- course categories content -->
+
+    <div class="course-categories-content">
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Business
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Health & Psychology
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Accounting
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Science & Technology
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Art & Media
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Real Estate
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Language
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+
+        <div class="content-one">
+            <div class="logo-container">
+                <div class="icon-image">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+            </div>
+            <div class="content-heading">
+                Web & Programming
+            </div>
+            <div class="content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus sit soluta
+                consectetur aspernatur aliquam rem, accusantium possimus.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-online-container">
+        <img src="Main_background_images/slider1.jpg" alt="">
+
+        <div class="main-online-content">
+            <h3>Get 400 of Online Courses for Free</h3>
+            <p>By Shoaib</p>
+            <div class="countdown-main">
+                <div class="countdown" id="countdown-one">0 Days</div>
+                <div class="countdown" id="countdown-two">0 Hours</div>
+                <div class="countdown" id="countdown-three">0 Minutes</div>
+                <div class="countdown" id="countdown-four">0 Seconds</div>
+            </div>
+            <p id="main-online-content-time">Limited Offer,Hurry Up!</p>
+            <button id="online-course-btn">Register Now</button>
+        </div>
+    </div>
+
+
+    
+
+    <div class="social">
+        <div class="social-platform">Social Platform Gallery</div>
+    </div>
+
+    <div class="social-gallery-main">
+        <div class="social-gallery-container">
+            <div class="social-gallery-content">
+                <img src="Main_background_images/main-color-pen.jpg" alt="">
+            </div>
+            <div class="social-gallery-content">
+                <img src="Main_background_images/main-research.jpg" alt="">
+            </div>
+            <div class="social-gallery-content">
+                <img src="Main_background_images/main-map.jpg" alt="">
+            </div>
+            <div class="social-gallery-content">
+                <img src="Main_background_images/main-artbook.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+
+
+
+    <footer>
+        <div class="footer-main">
+            <img src="Main_background_images/dark-ice-mountain1.jpg" alt="">
+
+            <div class="footer-mian-container">
+                <div class="footer-main-content">
+
+                    <div class="footer-about-section">
+                        <div class="about-heading"><span>ABOUT EDUCATION</span></div>
+                        <div class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            cum laudantium ratione excepturi aliquid sapiente voluptatum </div>
+                    </div>
+                    <div class="footer-learning">
+                        <div class="footer-learning-content"><span>LEARNING</span></div>
+                        <div class="about-description">
+                            <p><a href="#">Course</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Contact</a></p>
+                            <p><a href="#">Terms</a></p>
+                            <p><a href="#">Meetups</a></p>
+                        </div>
+
+                    </div>
+                    <div class="footer-learning-grow">
+                        <div class="footer-learning-grow-content">
+                            <span>LEARNING AND GROW</span>
+                        </div>
+                        <div class="learning-grow-description">
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Privacy</a></p>
+                            <p><a href="#">Testimonials</a></p>
+                            <p><a href="#">Handbook</a></p>
+                            <p><a href="#">Held Desk</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-engage">
+                        <div class="footer-engage-content">
+                            <span>ENGAGE US</span>
+                        </div>
+                        <div class="footer-engage-description">
+                            <p><a href="#">Marketing</a></p>
+                            <p><a href="#">Visual Assistant</a></p>
+                            <p><a href="#">System Analysis</a></p>
+                            <p><a href="#">Advertise</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-legal">
+                        <div class="footer-legal-content">
+                            <span>LEGAL</span>
+                        </div>
+                        <div class="footer-legal-description">
+                            <p><a href="#">Find Designers</a></p>
+                            <p><a href="#">Find Developers</a></p>
+                            <p><a href="#">Terms</a></p>
+                            <p><a href="#">Advertise</a></p>
+                            <p><a href="#">API</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright-policy">
+                    <p style="color: whitesmoke;">© 2016 Free HTML5. All Rights Reserved.<br style="color: whitesmoke;">
+                        Designed by Shoaib Khan <a href="https://www.linkedin.com/in/shoaib-codehub-4581a7326"
+                            target="_blank">Meet Me on linkedin</a> Or <a
+                            href="https://www.instagram.com/muhammed__shoaib_/profilecard/?igsh=MWNjMGk1c3Q0cHdkeQ%3D%3D"
+                            target="_blank">Instagram</a> & <a href="https://www.facebook.com/share/uNw9HhfNYTLrnafb/"
+                            target="_blank">Facebook</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="scripts/about.js"></script>
+    <script src="scripts/teacher.js"></script>
+</body>
+</html>
