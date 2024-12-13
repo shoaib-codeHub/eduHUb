@@ -18,6 +18,7 @@ The frontend leverages modern web development technologies such as HTML5, CSS3, 
 - **HTML5**: For semantic structure and modern markup.
 - **CSS3**: To craft visually appealing styles and animations.
 - **JavaScript**: Adds interactivity and dynamic behavior.
+- **Bootstrap 5**: Ensures responsive design and provides utility classes.
 - **FontAwesome**: Supplies icons for an enhanced user interface.
 - **Google Fonts**: Employs typography like `Poppins` and `IBM Plex Serif` for a polished look.
 
@@ -43,7 +44,7 @@ eduHub/
 To view the project locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/eduHub.git
+   git clone https://github.com/shoaib-codeHub/eduHub.git
    ```
 2. Navigate to the project folder:
    ```bash
@@ -60,13 +61,11 @@ To view the project locally:
 
 ---
 
-
 ## Acknowledgments
 
 - Designed by **Shoaib Khan**.
 - Fonts by [Google Fonts](https://fonts.google.com/).
-- Icons by [FontAwesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==).
+- Icons by [FontAwesome](https://fontawesome.com/).
 
 ---
 
