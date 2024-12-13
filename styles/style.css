@@ -627,7 +627,7 @@ button:hover {
     .users {
         height: 1200px;
         position: relative;
-        top: 800px;
+        top: 2100px;
     }
 
     .main-user-container {
@@ -644,7 +644,6 @@ button:hover {
 /*  course content  */
 
 /* Main container styling for desktop and larger screens */
-
 .main-course-container {
     margin: auto;
     display: grid;
