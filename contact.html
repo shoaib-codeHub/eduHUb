@@ -116,29 +116,30 @@
         <div class="contact-form">
             <h2>Get In Touch</h2>
 
-            <form action="index.html" id="contactForm">
+            <form action="submit_form.php" method="POST" id="contactForm">
                 <div class="user-name">
                     <div class="first-name">
-                        <input type="text" name="firstname" placeholder="Your firstname">
+                        <input type="text" name="firstname" placeholder="Your firstname" required>
                     </div>
                     <div class="last-name">
-                        <input type="text" name="lastname" placeholder="Your lastname">
+                        <input type="text" name="lastname" placeholder="Your lastname" required>
                     </div>
                 </div>
             
                 <div class="user-email">
-                    <input type="email" name="email" placeholder="Your email address">
-                    <input type="text" name="subject" placeholder="Your subject of this message">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <input type="text" name="subject" placeholder="Your subject of this message" required>
                 </div>
             
                 <div class="user-message">
-                    <input type="text" name="message" placeholder="Say something about us">
+                    <input type="text" name="message" placeholder="Say something about us" required>
                 </div>
             
                 <div class="form-submit">
                     <input type="submit" value="Send Message">
                 </div>
             </form>
+            
             
         </div>
 
